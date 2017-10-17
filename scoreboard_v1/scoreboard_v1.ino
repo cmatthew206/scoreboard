@@ -21,7 +21,7 @@ int r = 1,
     black,
     col,
     dir = 1, // direction bit for clock bounce at <= 3 seconds
-    rb = r+12,
+    rb = r + 12,
     c = 0,
     cp = c + 7,
     lumosity = 2,

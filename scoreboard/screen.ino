@@ -1,8 +1,8 @@
 void splashScreen()
 {
-  Serial.println("Reset");
+  printHeader("splash screen");
   matrix.fillScreen(0);
-  setLumosity(3);
+  set_brightness(3);
   yellow = matrix.Color333(2,1,0);
   srand(millis());
   int r = rand() % 5;
@@ -27,7 +27,6 @@ void splashScreen()
   }
   matrix.swapBuffers(false);
   delay(3000);
-  selectTime();
 }
 
 void fuckrUsty()
@@ -165,7 +164,7 @@ void drawCoors()
 
 void drawFlag()
 {
-  setLumosity(1);
+  set_brightness(1);
   int k = 1;
   for(i=0;i<31;i+=4)
   {
@@ -181,7 +180,7 @@ void drawFlag()
   {
     matrix.drawLine(i,0,i,16,blue);
   }
-  setLumosity(3);
+  set_brightness(3);
   for(i=1;i<26;i+=3)
   {
     if(k>0)
@@ -202,37 +201,37 @@ void drawFlag()
 void drawPenis()
 {
   // Top half
-  int col = red;
-  matrix.drawLine(0,3,0,13,col);
-  matrix.drawLine(8,4,25,4,col);
-  matrix.drawLine(1,1,1,3,col);
-  matrix.drawLine(2,0,2,1,col);
-  matrix.drawLine(3,0,5,0,col);
-  matrix.drawLine(6,0,6,1,col);
-  matrix.drawLine(7,1,7,3,col);
-  matrix.drawLine(8,3,8,4,col);
-  matrix.drawLine(9,4,25,4,col);
-  matrix.drawLine(26,3,28,3,col);
-  matrix.drawLine(29,4,31,6,col);
-  matrix.drawLine(31,7,31,9,col);
+  int color = red;
+  matrix.drawLine(0,3,0,13,color);
+  matrix.drawLine(8,4,25,4,color);
+  matrix.drawLine(1,1,1,3,color);
+  matrix.drawLine(2,0,2,1,color);
+  matrix.drawLine(3,0,5,0,color);
+  matrix.drawLine(6,0,6,1,color);
+  matrix.drawLine(7,1,7,3,color);
+  matrix.drawLine(8,3,8,4,color);
+  matrix.drawLine(9,4,25,4,color);
+  matrix.drawLine(26,3,28,3,color);
+  matrix.drawLine(29,4,31,6,color);
+  matrix.drawLine(31,7,31,9,color);
   
   // Bottom Half
-  matrix.drawLine(1,13,1,14,col);
-  matrix.drawLine(2,14,2,15,col);
-  matrix.drawLine(3,15,6,15,col);
-  matrix.drawLine(6,14,6,15,col);
-  matrix.drawLine(7,12,7,14,col);
-  matrix.drawLine(8,11,8,12,col);
-  matrix.drawLine(9,11,25,11,col);
-  matrix.drawLine(26,12,28,12,col);
-  matrix.drawLine(29,11,30,10,col);
+  matrix.drawLine(1,13,1,14,color);
+  matrix.drawLine(2,14,2,15,color);
+  matrix.drawLine(3,15,6,15,color);
+  matrix.drawLine(6,14,6,15,color);
+  matrix.drawLine(7,12,7,14,color);
+  matrix.drawLine(8,11,8,12,color);
+  matrix.drawLine(9,11,25,11,color);
+  matrix.drawLine(26,12,28,12,color);
+  matrix.drawLine(29,11,30,10,color);
   
   //Middle
-  matrix.drawLine(2,8,2,9,col);
-  matrix.drawLine(3,7,5,7,col);
-  matrix.drawLine(6,8,6,9,col);
-  matrix.drawPixel(7,9,col);
-  matrix.drawLine(9,8,24,8,col);
+  matrix.drawLine(2,8,2,9,color);
+  matrix.drawLine(3,7,5,7,color);
+  matrix.drawLine(6,8,6,9,color);
+  matrix.drawPixel(7,9,color);
+  matrix.drawLine(9,8,24,8,color);
 }
 
 void drawPiKapp()
@@ -414,7 +413,7 @@ void drawThomas()
   //colors
   //red,orange,yellow,green,blue,purple 
   //black,white,grey,brown,peach,wood,lips
-  setLumosity(7);
+  set_brightness(7);
   int peach = matrix.Color444(7,4,1);
   int brown = matrix.Color444(0,0,0);
   int wood = matrix.Color444(3,1,0);
@@ -589,4 +588,66 @@ void drawThomas()
   matrix.drawPixel(28,21,black);
   matrix.drawPixel(32,21,black);
 }
+
+void print_screen()
+{
+  double frac, int1, int2, int3, temp;
+
+  // Clear Screen
+  matrix.fillScreen(0);
+  color = white;
+  drawTeams();
+  drawScore();
+  drawTemp();
+  color = red;
+  
+  // Minutes digit                    ex: num = 345
+  temp = (double) time / 60; //                   temp=5.75
+  frac = modf(temp, &int1); //     frac=.75, intpart=5
+  
+  // Tens digit
+  temp = (time - 60 * int1)/10; //    temp= 4.5
+  frac = modf(temp, &int2); //     frac=.5, intpart=4
+  
+  // Seconds digit
+  temp = frac * 10; //                  temp=5
+  int3 = temp + 0.5; // int conversion inside drawDigit sees a floating 5.00 as 4.993882288134081 or whatever, for some reason. Add arbitrary 0.5 to ensure it's above truncation point
+
+  setCurs(4);
+  drawDigit(int1);
+  // colon 
+  matrix.drawPixel(c + 9, r + 3, color);
+  matrix.drawPixel(c + 9, r + 4, color);
+  matrix.drawPixel(c + 9, r + 8, color);
+  matrix.drawPixel(c + 9, r + 9, color);
+  setCurs(5);
+  drawDigit(int2);
+  setCurs(6);
+  drawDigit(int3);
+  
+  matrix.swapBuffers(false);
+}
+
+void set_brightness(int lum)
+{
+//  int photocellReading = analogRead(A5);
+//  photocellReading = 1023 - photocellReading;
+//  if(lum == 0)
+//  {
+//    lum = map(photocellReading, 0, 1023, 0, 7);
+//    lum = 7 - lum;
+//    Serial.print("Brightness: ");
+//    Serial.println(photocellReading);
+//    Serial.println(lum);
+//  }
+  red = matrix.Color333(lum, 0, 0);
+  blue = matrix.Color333(0,0,lum);
+  white = matrix.Color333(lum,lum,lum);
+  yellow = matrix.Color333(lum,lum,0);
+  green = matrix.Color333(0, lum, 0);
+  grey = matrix.Color333(1,1,1);
+  black = matrix.Color333(0,0,0);
+  
+}
+
 

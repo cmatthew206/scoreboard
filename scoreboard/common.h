@@ -24,3 +24,14 @@ int time = 300; // initialize at 5 min
 
 // aparently arduino complains that this number can overflow an int so its a long
 const long TIMEOUT = 180000; // initialized at 3 min (measured in miliseconds)
+
+enum innings{
+  BOTTOM_OF_FIRST = 0,
+  TOP_OF_FIRST,
+  BOTTOM_OF_SECOND,
+  TOP_OF_SECOND,
+  THIRD
+};
+
+typedef enum innings Inning;
+

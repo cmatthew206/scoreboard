@@ -1,14 +1,26 @@
-enum innings{
-  BOTTOM_OF_FIRST,
-  TOP_OF_FIRST,
-  BOTTOM_OF_SECOND,
-  TOP_OF_SECOND,
-  THIRD
-};
+String get_inning(Inning inning) {
+  switch (inning) {
+    case BOTTOM_OF_FIRST: return "bottom of the first";
+    case TOP_OF_FIRST: return "top of the first";
+    case BOTTOM_OF_SECOND: return "bottom of the second";
+    case TOP_OF_SECOND: return "top of the second";
+    case THIRD: return "third or greater";
+    default: 
+      error("current inning is unknown, looping idly");
+      for (;;);
+  }
+}
 
 void reset_time()
 {
-  static int current_inning = BOTTOM_OF_FIRST;
+  String inning_str = get_inning(BOTTOM_OF_FIRST);
+  debug("BOTTOM_OF_FIRST is");
+  debug(inning_str);
+
+  static Inning current_inning = BOTTOM_OF_FIRST;
+  inning_str = get_inning(current_inning);
+  debug("current_inning:");
+  debug(inning_str);
   switch (current_inning)
   {
     case BOTTOM_OF_FIRST:

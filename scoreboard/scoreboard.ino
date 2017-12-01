@@ -1,6 +1,7 @@
 #include <Adafruit_GFX.h>   // Core graphics library
 #include <RGBmatrixPanel.h> // Hardware-specific library
 #include "./common.h"
+#include "./custom_print.h"
 
 #define OE   9
 #define LAT 10

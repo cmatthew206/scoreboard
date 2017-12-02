@@ -10,13 +10,11 @@ void run_state_machine()
     switch (current_state) 
     {
       case SPLASH_SCREEN:
-        debug("splash screen");
         splashScreen();
         current_state = INIT_TIME;
         break;
 
       case INIT_TIME:
-        debug("init time");
         
         print_screen();
         select_time();
@@ -24,7 +22,6 @@ void run_state_machine()
         break;
 
       case COUNT_DOWN:
-        debug("count down");
 
         if (count_down_time() > 0)
         {
@@ -42,7 +39,6 @@ void run_state_machine()
         break;
 
       case PAUSE_TIME:
-        debug("pause_time");
 
         if (pause_play_is_pressed())
         {
@@ -66,7 +62,6 @@ void run_state_machine()
         break;
 
       case TIME_ZERO:
-        debug("time is zero");
         if (reset_is_pressed())
         {
           short_buzzer();

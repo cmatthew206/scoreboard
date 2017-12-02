@@ -1,4 +1,4 @@
-String get_inning(Inning inning) {
+const char* get_inning(Inning inning) {
   switch (inning) {
     case BOTTOM_OF_FIRST: return "bottom of the first";
     case TOP_OF_FIRST: return "top of the first";
@@ -13,14 +13,9 @@ String get_inning(Inning inning) {
 
 void reset_time()
 {
-  String inning_str = get_inning(BOTTOM_OF_FIRST);
-  debug("BOTTOM_OF_FIRST is");
-  debug(inning_str);
-
   static Inning current_inning = BOTTOM_OF_FIRST;
-  inning_str = get_inning(current_inning);
-  debug("current_inning:");
-  debug(inning_str);
+  debug("current_inning: %s", get_inning(current_inning));
+
   switch (current_inning)
   {
     case BOTTOM_OF_FIRST:
@@ -43,7 +38,7 @@ void reset_time()
       time = 420; // lol
       break;
     default:
-      error("current inning is unknown, looping idly");
+      error("current inning is unknown, looping idly", NULL);
       for (;;);
   }
 }

@@ -18,6 +18,8 @@ bool reset_is_pressed();
 bool pause_play_is_pressed();
 bool home_is_pressed();
 bool away_is_pressed();
+bool home_down_is_pressed();
+bool away_down_is_pressed();
 
 // some global variables
 int time = 300; // initialize at 5 min

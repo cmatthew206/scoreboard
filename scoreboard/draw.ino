@@ -39,7 +39,7 @@ void drawTeams()
   matrix.drawLine(19, 6, 20, 6, color);
   matrix.drawLine(21, 7, 21, 8, color);
   matrix.drawLine(20, 8, 19, 8, color);
-  
+
   // A
   int s = 42;
 
@@ -70,9 +70,12 @@ void drawTeams()
 
 void drawTemp()
 {
-  // Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 5V):
 
-  if (temperature >= 60)
+  if (temperature >= 80)
+  {
+    color = red;
+  }
+  else if (temperature >= 60)
   {
     color = yellow;
   }
@@ -81,18 +84,20 @@ void drawTemp()
     color = blue;
   }
   // display temp numbers
-  double frac, intpart, temp;
-  char str1;
-  frac = modf(temperature / 10.0, &intpart);
-  setCurs(2);
-  drawDigit(intpart);
+  // double frac, intpart, temp;
+  // char str1;
+  // frac = modf(temperature / 10.0, &intpart);
+  // setCurs(2);
+  // drawDigit(intpart);
+  //
+  //
+  // temp = temperature - intpart*10;
+  // frac = modf(temp, &intpart);
 
-  
-  temp = temperature - intpart*10;
-  frac = modf(temp, &intpart);
   setCurs(3);
-  drawDigit(intpart);
-  
+  drawDigit((int)temperature);
+
+  // degrees
   matrix.drawPixel(40,2,color);
   matrix.drawPixel(39,1,color);
   matrix.drawPixel(39,3,color);

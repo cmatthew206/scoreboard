@@ -7,7 +7,7 @@ void run_state_machine()
 
   for (;;)
   {
-    switch (current_state) 
+    switch (current_state)
     {
       case SPLASH_SCREEN:
         debug("splash screen");
@@ -17,7 +17,7 @@ void run_state_machine()
 
       case INIT_TIME:
         debug("init time");
-        
+
         print_screen();
         select_time();
         current_state = COUNT_DOWN;
@@ -33,11 +33,11 @@ void run_state_machine()
             short_buzzer();
             debounce(pause_play_is_pressed);
             current_state = PAUSE_TIME;
-          }  
+          }
         }
         else
         {
-          current_state = TIME_ZERO;  
+          current_state = TIME_ZERO;
         }
         break;
 
@@ -56,7 +56,7 @@ void run_state_machine()
           short_buzzer();
           delay(200);
           while (reset_is_pressed());
-          reset_time();   
+          reset_time();
           current_state = SPLASH_SCREEN;
         }
         else
@@ -81,7 +81,7 @@ void run_state_machine()
             matrix.fillScreen(0);
             matrix.swapBuffers(false);
           }
-          else 
+          else
           {
             // want to ensure that score_buttons can't affect timeout of display - only reset button can
             check_score_buttons();
@@ -97,26 +97,24 @@ void run_state_machine()
 }
 
 void check_score_buttons()
-{  if(home_is_pressed())
+{
+  if(home_is_pressed())
   {
     short_buzzer();
     homeScore++;
     print_screen();
     delay(200);
-    while(home_is_pressed())
+  }
+  if(home_down_is_pressed())
+  {
+    short_buzzer();
+    homeScore--;
+    if (homeScore < 0)
     {
-      if(away_is_pressed())
-      {
-        short_buzzer();
-        homeScore--;
-        if (homeScore < 0)
-        {
-          homeScore = 0;
-        }
-        print_screen();
-        debounce(away_is_pressed);
-      }
+      homeScore = 0;
     }
+    print_screen();
+    debounce(home_down_is_pressed);
   }
 
   if (away_is_pressed())
@@ -125,19 +123,17 @@ void check_score_buttons()
     awayScore++;
     print_screen();
     delay(200);
-    while (away_is_pressed())
+  }
+
+  if (away_down_is_pressed())
+  {
+    short_buzzer();
+    awayScore--;
+    if (awayScore < 0)
     {
-      if (home_is_pressed())
-      {
-        short_buzzer();
-        awayScore--;
-        if (awayScore < 0)
-        {
-          awayScore = 0;
-        }
-        print_screen();
-        debounce(home_is_pressed);
-      }
+      awayScore = 0;
     }
+    print_screen();
+    debounce(away_down_is_pressed);
   }
 }

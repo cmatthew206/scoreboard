@@ -19,6 +19,7 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 * [Pushbuttons x6](https://www.amazon.com/Momentary-Waterproof-Stainless-Terminal-API-ELE/dp/B079HR5Q4R/ref=sr_1_23?keywords=push+button&qid=1555904659&s=industrial&sr=1-23)
 * [Ethernet Cable](https://www.sparkfun.com/products/8915)
 * [Ribbon Cables]
+* [Perma-Proto Board](https://www.adafruit.com/product/1148)
 
 
 ## Prerequisites
@@ -26,9 +27,13 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 The Arduino IDE is used for programming the Arduino Mega.  See the download page [here](https://www.arduino.cc/en/Main/Software) and select the installer for your operating system.  An external 5V power source fed into the barrel jack connector is needed to power the system.
 
 
-## Running the tests
+## Setup
 
+Six holes were drilled into the outdoor project box to mount 6 pushbuttons.
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pushbutton_panel.PNG?raw=true)
+
+A perma-proto board was used to solder the ground connections for the buttons together.  A split ethernet cable was hooked up to each of the six pushbuttons and the common ground.  This cable is then split again at the other end for connections on the pcb.
+
 
 Explain how to run the automated tests for this system
 

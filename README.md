@@ -40,12 +40,12 @@ Eagle CAD for the pcb and the pcb itself.
 
 Six holes were drilled into the outdoor project box to mount 6 pushbuttons.
 These pushbuttons are responsible for 
-  (1) Home team score decrement (bottom left)
-  (2) Home team score increment (upper left)
-  (3) Away team score decrement (bottom right)
-  (4) Away team score increment (upper right)
-  (5) Pause timer (left middle)
-  (6) Reset game (right middle)
+  1. Home team score decrement (bottom left)
+  2. Home team score increment (upper left)
+  3. Away team score decrement (bottom right)
+  4. Away team score increment (upper right)
+  5. Pause timer (left middle)
+  6. Reset game (right middle)
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pushbutton_panel.PNG?raw=true)
 
 A perma-proto board was used to solder the ground connections for the buttons together.  A split ethernet cable was hooked up to each of the six pushbuttons and the common ground.  This cable is then split again at the other end for connections on the pcb.

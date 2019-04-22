@@ -22,6 +22,8 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 * [Perma-Proto Board](https://www.adafruit.com/product/1148)
 * [Jumper Wires](https://www.adafruit.com/product/758)
 
+Additionally, basic soldering materials and a means for pcb facbrication are required.
+
 
 ## Prerequisites
 

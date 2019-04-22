@@ -28,7 +28,7 @@ The Arduino IDE is used for programming the Arduino Mega.  See the download page
 
 ## Running the tests
 
-![alt text](https://github.com/alankittel3/scoreboard/pushbutton_panel.png)
+![alt text](https://imgur.com/a/pyzlu1E)
 
 Explain how to run the automated tests for this system
 

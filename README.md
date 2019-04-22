@@ -48,7 +48,7 @@ A perma-proto board was used to solder the ground connections for the buttons to
 Explain basic breakdown of code, which files do what.
 Explain how to get started with programming in the Arduino IDE.
 
-## Usgae
+## Usage
 Explain how to use the device.
 What pushbuttons do.
 How to reset.

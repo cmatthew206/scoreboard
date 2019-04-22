@@ -23,11 +23,7 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+The Arduino IDE is used for programming the Arduino Mega.  See the download page [here](https://www.arduino.cc/en/Main/Software) and select the installer for your operating system.
 
 ### Installing
 

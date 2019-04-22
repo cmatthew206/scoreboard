@@ -12,7 +12,7 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 * [Voltage Regulator Board](https://www.amazon.com/Digital-Converter-Adjustable-Regulator-Transformer/dp/B07MDZQ9QP)
 * [DC Barrel Power Jack](https://www.sparkfun.com/products/119)
 * [AMP Breakout Board](https://www.sparkfun.com/products/11044)
-4.7k Ohm Resistor
+* 4.7k Ohm Resistor
 * [Speaker](https://www.sparkfun.com/products/11089)
 * [Temperature Probe](https://www.sparkfun.com/products/11050)
 

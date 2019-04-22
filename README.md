@@ -49,9 +49,9 @@ Explain basic breakdown of code, which files do what.
 Explain how to get started with programming in the Arduino IDE.
 
 ## Usage
-Explain how to use the device.
-What pushbuttons do.
-How to reset.
-How to install phone application and use it.
+Demo video showing the usage of the pushbutton panel and phone application.
+-embed video-
+
+The top middle button on the pushbutton panel pauses the timer and the bottom middle pushbutton resets the game.  The game can only be reset when it is paused.
 
 The functionality of the pushbutton panel is replicated via phone commands over a BLE connection.  See the repo [here](https://www.sparkfun.com/products/14492) for a slightly different version of the Android application used in this project.

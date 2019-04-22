@@ -1,6 +1,7 @@
-# Project Title
+# Baseball Scoreboard with Pushbutton Panel and Bluetooth Mobile Application
+Team members:  Matthew Aspinwall, Tony Lindeman, Alan Kittel, Lucas Nativio
 
-One Paragraph of project description goes here
+This project is an Arduino Mega controlled baseball scoreboard.  A large LED panel is used to display the scoreboard, a pushbutton panel for editing the score, changing the inning, and resets, and a Bluetooth module for replicating the pushbutton functionality on a Android phone.
 
 ## Getting Started
 

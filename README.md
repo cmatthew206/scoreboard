@@ -17,7 +17,7 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 * [Outdoor Project Box](https://www.amazon.com/Estone-Waterproof-Plastic-Electronic-Enclosure/dp/B00JEWNKR0)
 * [Pushbuttons x6](https://www.amazon.com/Momentary-Waterproof-Stainless-Terminal-API-ELE/dp/B079HR5Q4R/ref=sr_1_23?keywords=push+button&qid=1555904659&s=industrial&sr=1-23)
 * [Ethernet Cable](https://www.sparkfun.com/products/8915)
-* [Ribbon Cables]
+* [16 pin Ribbon Cable](https://www.amazon.com/Uxcell-Ribbon-Cable-Length-Pieces/dp/B01BNKVGAI)
 * [Perma-Proto Board](https://www.adafruit.com/product/1148)
 * [Jumper Wires](https://www.adafruit.com/product/758)
 * [4.7k Ohm Resistor](https://www.adafruit.com/product/2783)

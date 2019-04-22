@@ -23,7 +23,7 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 
 ## Prerequisites
 
-The Arduino IDE is used for programming the Arduino Mega.  See the download page [here](https://www.arduino.cc/en/Main/Software) and select the installer for your operating system.
+The Arduino IDE is used for programming the Arduino Mega.  See the download page [here](https://www.arduino.cc/en/Main/Software) and select the installer for your operating system.  An external 5V power source fed into the barrel jack connector is needed to power the system.
 
 
 ## Running the tests

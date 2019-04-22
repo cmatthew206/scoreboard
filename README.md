@@ -34,7 +34,7 @@ The Arduino IDE is used for programming the Arduino Mega.  See the download page
 Full system pinout, complete with the Arduino Mega board, speaker & amplifier, BLE module, pushbuttons, temperature probe, voltage regulator, and power jack.
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pcb_pinout.png?raw=true)
 
-Eagle CAD for the pcb and the pcb itself.
+A custom made pcb hat was used to help reduce the housing size.  The BLE module, speaker, amplifier, and voltage regulator are directly soldered onto the pcb.  The connections for the LED panel and temperature probe are also soldered onto the pcb.  The pcb is mounted onto the Arduino Mega.
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pcb.png?raw=true)
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pcb_physical.PNG?raw=true)
 

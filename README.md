@@ -41,7 +41,6 @@ A perma-proto board was used to solder the ground connections for the buttons to
 
 Splitting the ethernet cable.
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/ethernet_cable_split.PNG?raw=true)
-Explain how to run the automated tests for this system
 
 ### Break down into end to end tests
 

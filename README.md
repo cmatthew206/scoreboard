@@ -47,7 +47,7 @@ These pushbuttons are responsible for
   4. Away team score increment (upper right)
   5. Pause timer (left middle)
   6. Reset game (right middle)  
-
+The game can only be reset when it is paused.
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pushbutton_panel.PNG?raw=true)
 
 A perma-proto board was used to solder the ground connections for the buttons together.  A split ethernet cable was hooked up to each of the six pushbuttons and the common ground.  This cable is then split again at the other end for connections on the pcb.
@@ -60,7 +60,5 @@ Explain how to get started with programming in the Arduino IDE.
 ## Usage
 Demo video showing the usage of the pushbutton panel and phone application.
 -embed video-
-
-The top middle button on the pushbutton panel pauses the timer and the bottom middle pushbutton resets the game.  The game can only be reset when it is paused.
 
 The functionality of the pushbutton panel is replicated via phone commands over a BLE connection.  See the repo [here](https://www.sparkfun.com/products/14492) for a slightly different version of the Android application used in this project.

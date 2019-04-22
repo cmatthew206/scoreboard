@@ -38,4 +38,7 @@ Six holes were drilled into the outdoor project box to mount 6 pushbuttons.
 A perma-proto board was used to solder the ground connections for the buttons together.  A split ethernet cable was hooked up to each of the six pushbuttons and the common ground.  This cable is then split again at the other end for connections on the pcb.
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pushbutton_panel_open.PNG?raw=true)
 
+Full system pinout, complete with the Arduino Mega board, speaker & amplifier, BLE module, pushbuttons, temperature probe, voltage regulator, and power jack.
+
+
 ## Code Overview

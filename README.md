@@ -12,7 +12,6 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 * [Voltage Regulator Board](https://www.amazon.com/Digital-Converter-Adjustable-Regulator-Transformer/dp/B07MDZQ9QP)
 * [DC Barrel Power Jack](https://www.sparkfun.com/products/119)
 * [AMP Breakout Board](https://www.sparkfun.com/products/11044)
-
 * [Speaker](https://www.sparkfun.com/products/11089)
 * [Temperature Probe](https://www.sparkfun.com/products/11050)
 * [Outdoor Project Box](https://www.amazon.com/Estone-Waterproof-Plastic-Electronic-Enclosure/dp/B00JEWNKR0)

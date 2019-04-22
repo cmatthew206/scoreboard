@@ -1,5 +1,5 @@
 # Baseball Scoreboard with Pushbutton Panel and Bluetooth Mobile Application
-Final Project for ECE4180 at Georgia Institute of Technology, Spring 2019.
+Final Project for ECE4180 at Georgia Institute of Technology, Spring 2019.  
 Team members:  Matthew Aspinwall, Tony Lindeman, Alan Kittel, Lucas Nativio
 
 This project is an Arduino Mega controlled baseball scoreboard.  A large LED panel is used to display the scoreboard, a pushbutton panel for editing the score, changing the inning, and resets, and a Bluetooth module for replicating the pushbutton functionality on a Android phone.

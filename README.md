@@ -7,6 +7,15 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 ## Components
 
 * [Arduino Mega](https://store.arduino.cc/usa/mega-2560-r3)
+* [BLE Module](https://www.adafruit.com/product/2479)
+* [LED Panel](https://www.sparkfun.com/products/14718)
+* [Voltage Regulator Board](https://www.amazon.com/Digital-Converter-Adjustable-Regulator-Transformer/dp/B07MDZQ9QP)
+* [DC Barrel Power Jack](https://www.sparkfun.com/products/119)
+* [AMP Breakout Board](https://www.sparkfun.com/products/11044)
+4.7k Ohm Resistor
+* [Speaker](https://www.sparkfun.com/products/11089)
+* [Temperature Probe](https://www.sparkfun.com/products/11050)
+
 
 ### Prerequisites
 

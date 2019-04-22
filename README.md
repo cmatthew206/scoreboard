@@ -54,4 +54,4 @@ What pushbuttons do.
 How to reset.
 How to install phone application and use it.
 
-The functionality of the pushbutton panel is replicated via phone commands over a BLE connection.  See the repo [here](https://www.sparkfun.com/products/14492) for setting up the Android application.
+The functionality of the pushbutton panel is replicated via phone commands over a BLE connection.  See the repo [here](https://www.sparkfun.com/products/14492) for a slightly different version of the Android application used in this project.

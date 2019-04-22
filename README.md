@@ -20,6 +20,7 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 * [Ethernet Cable](https://www.sparkfun.com/products/8915)
 * [Ribbon Cables]
 * [Perma-Proto Board](https://www.adafruit.com/product/1148)
+* [Jumper Wires](https://www.adafruit.com/product/758)
 
 
 ## Prerequisites

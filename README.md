@@ -6,7 +6,7 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 
 ## Components
 
-* [Arduino](https://store.arduino.cc/usa/mega-2560-r3) - Arduino Mega
+* [Arduino Mega](https://store.arduino.cc/usa/mega-2560-r3)
 
 ### Prerequisites
 

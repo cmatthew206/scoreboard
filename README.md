@@ -38,7 +38,8 @@ Eagle CAD for the pcb and the pcb itself.
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pcb.png?raw=true)
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pcb_physical.PNG?raw=true)
 
-Six holes were drilled into the outdoor project box to mount 6 pushbuttons.
+Six holes were drilled into the outdoor project box to mount 6 pushbuttons.  
+The speaker emits a short beep sound when any button is pressed.    
 These pushbuttons are responsible for 
   1. Home team score decrement (bottom left)
   2. Home team score increment (upper left)
@@ -46,7 +47,7 @@ These pushbuttons are responsible for
   4. Away team score increment (upper right)
   5. Pause timer (left middle)
   6. Reset game (right middle)  
-The speaker emits a short beep sound when any button is pressed.  
+
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pushbutton_panel.PNG?raw=true)
 
 A perma-proto board was used to solder the ground connections for the buttons together.  A split ethernet cable was hooked up to each of the six pushbuttons and the common ground.  This cable is then split again at the other end for connections on the pcb.

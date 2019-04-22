@@ -46,6 +46,7 @@ These pushbuttons are responsible for
   4. Away team score increment (upper right)
   5. Pause timer (left middle)
   6. Reset game (right middle)
+The speaker emits a short beep sound when any button is pressed.
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pushbutton_panel.PNG?raw=true)
 
 A perma-proto board was used to solder the ground connections for the buttons together.  A split ethernet cable was hooked up to each of the six pushbuttons and the common ground.  This cable is then split again at the other end for connections on the pcb.

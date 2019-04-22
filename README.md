@@ -34,7 +34,8 @@ The Arduino IDE is used for programming the Arduino Mega.  See the download page
 Full system pinout, complete with the Arduino Mega board, speaker & amplifier, BLE module, pushbuttons, temperature probe, voltage regulator, and power jack.
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pcb_pinout.png?raw=true)
 
-Eagle CAD for the pcb.
+Eagle CAD for the pcb and the pcb itself.
+![Image](https://github.com/alankittel3/scoreboard/blob/master/pcb_png?raw=true)
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pcb_physical.PNG?raw=true)
 
 Six holes were drilled into the outdoor project box to mount 6 pushbuttons.

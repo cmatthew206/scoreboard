@@ -15,6 +15,9 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 * 4.7k Ohm Resistor
 * [Speaker](https://www.sparkfun.com/products/11089)
 * [Temperature Probe](https://www.sparkfun.com/products/11050)
+* [Outdoor Project Box](https://www.amazon.com/Estone-Waterproof-Plastic-Electronic-Enclosure/dp/B00JEWNKR0)
+* [Ethernet Cable](https://www.sparkfun.com/products/8915)
+* [Ribbon Cables]
 
 
 ### Prerequisites

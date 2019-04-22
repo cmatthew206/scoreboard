@@ -45,3 +45,11 @@ A perma-proto board was used to solder the ground connections for the buttons to
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pushbutton_panel_open.PNG?raw=true)
 
 ## Code Overview
+Explain basic breakdown of code, which files do what.
+Explain how to get started with programming in the Arduino IDE.
+
+## Usgae
+Explain how to use the device.
+What pushbuttons do.
+How to reset.
+How to install phone application and use it.

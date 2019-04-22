@@ -23,7 +23,7 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 * [Jumper Wires](https://www.adafruit.com/product/758)
 * [4.7k Ohm Resistor](https://www.adafruit.com/product/2783)
 
-Additionally, basic soldering materials and a means for pcb facbrication are required.
+Additionally, access to soldering materials, and a woodworking and pcb fabrication lab are required.
 
 
 ## Prerequisites

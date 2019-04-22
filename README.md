@@ -20,7 +20,7 @@ This project is an Arduino Mega controlled baseball scoreboard.  A large LED pan
 * [16 pin Ribbon Cable](https://www.amazon.com/Uxcell-Ribbon-Cable-Length-Pieces/dp/B01BNKVGAI)
 * [Perma-Proto Board](https://www.adafruit.com/product/1148)
 * [Jumper Wires](https://www.adafruit.com/product/758)
-* [4.7k Ohm Resistor](https://www.adafruit.com/product/2783)
+* [1k Ohm Resistor](https://www.sparkfun.com/products/14492)
 
 Additionally, access to soldering materials, and a woodworking and pcb fabrication lab are required.
 

@@ -47,6 +47,7 @@ These pushbuttons are responsible for
   4. Away team score increment (upper right)
   5. Pause timer (left middle)
   6. Reset game (right middle)  
+  
 The game can only be reset when it is paused.
 ![Image](https://github.com/alankittel3/scoreboard/blob/master/pushbutton_panel.PNG?raw=true)
 

@@ -14,12 +14,12 @@ const int AWAY_PIN_DOWN = 42;
 const int PP_PIN = 44; // Green wire (pin 44) (green button)
 const int RESET_PIN = 46; // Brown wire (pin 46) (black button)
 
-#define UP "!B51"
-#define DOWN "!B61"
+#define UP "!B516"
+#define DOWN "!B615"
 #define LEFT "!B714"
 #define RIGHT "!B813"
 #define BTWO "!B21"
-#define BFOUR "!B41"
+#define BFOUR "!B4"
 
 // Setup temperature sensor
 OneWire oneWire(5);

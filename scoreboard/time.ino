@@ -52,14 +52,13 @@ int increment_time()
 void select_time()
 {
   set_brightness(brightness);
-  getTemp();
   print_screen();
   tempMillis = millis();
-  
+
   while(!pause_play_is_pressed())
   {
     check_score_buttons();
-    
+
     if(reset_is_pressed())
     {
       short_buzzer();
@@ -99,7 +98,7 @@ void select_time()
     }
   }
   short_buzzer();
-  previousMillis = 0; 
+  previousMillis = 0;
   delay(300); // debounce start button
   // count_down_time();
 }
@@ -108,7 +107,7 @@ void pauseTime()
 {
   tempMillis = millis();
   while(!pause_play_is_pressed()) // wait for start button
-  { 
+  {
     check_score_buttons();
 
     if (reset_is_pressed())
@@ -117,7 +116,6 @@ void pauseTime()
       debounce(reset_is_pressed);
       splashScreen();
     }
-    
     // timeout check (turn screen off after 3 min)
     currentMillis = millis();
     debug("" + (currentMillis - tempMillis));
@@ -147,53 +145,52 @@ int count_down_time()
   if (time <= 30) {
     red = yellow;
   }
-  
   // 10 second shake
   // CURRENTLY DOESNT WORK
   currentMillis = millis();
-  if (time <= 10)
-  {
-    if (currentMillis - shakeMillis > 100) // if 1 second has passed
-    {
-      shakeMillis = currentMillis; // save the current time
-      r += dir;
-      rb += dir;
-      if (r > 2)
-      {
-        r -= 2;
-        dir =- dir;
-        rb -= 2;
-      }
-      if (r < 1)
-      {
-        r += 2;
-        rb += 2;
-        dir = -dir;
-      }
-      print_screen();
-    }
-  }
-  
+  // if (time <= 10)
+  // {
+  //   if (currentMillis - shakeMillis > 100) // if 1 second has passed
+  //   {
+  //     shakeMillis = currentMillis; // save the current time
+  //     r += dir;
+  //     rb += dir;
+  //     if (r > 2)
+  //     {
+  //       r -= 2;
+  //       dir =- dir;
+  //       rb -= 2;
+  //     }
+  //     if (r < 1)
+  //     {
+  //       r += 2;
+  //       rb += 2;
+  //       dir = -dir;
+  //     }
+  //     print_screen();
+  //   }
+  // }
+
   //start 1-second timer
   if (currentMillis - previousMillis > interval) // if 1 second has passed
   {
     previousMillis = currentMillis; // save the current time
     time--; //decrement time time by 1
 
-    if (time % 27 == 0)
-    {
-      getTemp();
-    }
+    // if (time % 27 == 0)
+    // {
+    //   getTemp();
+    // }
 
     print_screen();
-    
+
     if (time <= 3)
     {
       short_buzzer();
     }
   }
- 
+  // debug("before score");
   check_score_buttons();
-  
+  // debug("finishing count_down_time");
   return time;
 }

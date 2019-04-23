@@ -60,8 +60,3 @@ void loop()
 {
   run_state_machine();
 }
-
-
-
-
-

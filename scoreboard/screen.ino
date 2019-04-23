@@ -12,11 +12,12 @@ void splashScreen()
     case 1:
       drawFlag();
       break;
-    case 2: 
+    case 2:
       drawPiKapp();
       break;
     case 3:
-      fuckrUsty();
+      drawPiKapp(); //for demo
+      //fuckrUsty();
       break;
     case 4:
       drawThomas();
@@ -39,7 +40,7 @@ void fuckrUsty()
 
 void drawCoors()
 {
-  
+
   // white background
   matrix.fillScreen(grey);
   // C in coors
@@ -214,7 +215,7 @@ void drawPenis()
   matrix.drawLine(26,3,28,3,color);
   matrix.drawLine(29,4,31,6,color);
   matrix.drawLine(31,7,31,9,color);
-  
+
   // Bottom Half
   matrix.drawLine(1,13,1,14,color);
   matrix.drawLine(2,14,2,15,color);
@@ -225,7 +226,7 @@ void drawPenis()
   matrix.drawLine(9,11,25,11,color);
   matrix.drawLine(26,12,28,12,color);
   matrix.drawLine(29,11,30,10,color);
-  
+
   //Middle
   matrix.drawLine(2,8,2,9,color);
   matrix.drawLine(3,7,5,7,color);
@@ -411,7 +412,7 @@ void gtFlag()
 void drawThomas()
 {
   //colors
-  //red,orange,yellow,green,blue,purple 
+  //red,orange,yellow,green,blue,purple
   //black,white,grey,brown,peach,wood,lips
   set_brightness(7);
   int peach = matrix.Color444(7,4,1);
@@ -505,7 +506,7 @@ void drawThomas()
   matrix.drawLine(40,23,40,24,brown);
   matrix.drawPixel(41,22,brown);
   matrix.drawLine(21,8,21,7,brown);
-  matrix.drawLine(39,16,39,19,brown); 
+  matrix.drawLine(39,16,39,19,brown);
   //moustache
   matrix.drawLine(22,22,23,22,brown);
   matrix.drawLine(23,23,29,23,brown);
@@ -515,10 +516,10 @@ void drawThomas()
   matrix.drawLine(31,23,36,23,brown);
   matrix.drawLine(32,24,35,24,brown);
   matrix.drawPixel(37,22,brown);
-  
+
   //mouth
   matrix.drawLine(28,24,31,24,lips);
-  
+
   //glasses
   matrix.drawLine(22,12,22,14,wood);
   matrix.drawLine(23,14,23,17,wood);
@@ -540,7 +541,7 @@ void drawThomas()
   matrix.drawPixel(36,14,wood);
   matrix.drawLine(38,15,38,16,wood);
   matrix.drawLine(39,14,39,15,wood);
-  
+
   //eyes
   //left
   matrix.fillRect(25,14,4,5,white);
@@ -554,8 +555,8 @@ void drawThomas()
   //pupils
   matrix.drawLine(26,16,26,17, black);
   matrix.drawLine(34,16,34,17, black);
-  
-  
+
+
   //neck
   matrix.drawPixel(25,26,wood);
   matrix.drawPixel(26,28,wood);
@@ -567,20 +568,20 @@ void drawThomas()
   matrix.drawLine(35,28,37,28,wood);
   matrix.drawLine(36,27,37,27,wood);
   matrix.drawPixel(37,26,wood);
-  
+
   //shirt
   matrix.drawLine(36,30,36,31,grey);
   matrix.drawLine(37,29,37,31,grey);
   matrix.drawLine(38,26,38,31,grey);
   matrix.drawPixel(39,30,grey);
-  
+
   //jacket
   matrix.drawLine(39,26,39,29,black);
   matrix.drawLine(40,28,40,31,black);
   matrix.drawLine(41,30,41,31,black);
   matrix.drawPixel(42,31,black);
   matrix.drawPixel(39,31,black);
-  
+
   //nose
   matrix.drawLine(30,17,30,18,black);
   matrix.drawLine(29,19,29,21,black);
@@ -600,22 +601,22 @@ void print_screen()
   drawScore();
   drawTemp();
   color = red;
-  
+
   // Minutes digit                    ex: num = 345
   temp = (double) time / 60; //                   temp=5.75
   frac = modf(temp, &int1); //     frac=.75, intpart=5
-  
+
   // Tens digit
   temp = (time - 60 * int1)/10; //    temp= 4.5
   frac = modf(temp, &int2); //     frac=.5, intpart=4
-  
+
   // Seconds digit
   temp = frac * 10; //                  temp=5
   int3 = temp + 0.5; // int conversion inside drawDigit sees a floating 5.00 as 4.993882288134081 or whatever, for some reason. Add arbitrary 0.5 to ensure it's above truncation point
 
   setCurs(4);
   drawDigit(int1);
-  // colon 
+  // colon
   matrix.drawPixel(c + 9, r + 3, color);
   matrix.drawPixel(c + 9, r + 4, color);
   matrix.drawPixel(c + 9, r + 8, color);
@@ -624,7 +625,7 @@ void print_screen()
   drawDigit(int2);
   setCurs(6);
   drawDigit(int3);
-  
+
   matrix.swapBuffers(false);
 }
 
@@ -647,7 +648,5 @@ void set_brightness(int lum)
   green = matrix.Color333(0, lum, 0);
   grey = matrix.Color333(1,1,1);
   black = matrix.Color333(0,0,0);
-  
+
 }
-
-

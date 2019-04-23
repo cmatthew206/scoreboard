@@ -55,6 +55,7 @@ void run_state_machine()
         {
           short_buzzer();
           delay(200);
+
           while (reset_is_pressed());
           reset_time();
           current_state = SPLASH_SCREEN;
